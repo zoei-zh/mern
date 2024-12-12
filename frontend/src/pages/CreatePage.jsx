@@ -17,7 +17,7 @@ const CreatePage = () => {
     const { success, message } = await createProduct(newProduct)
     console.log("Success:", success);
     console.log("Message", message);
-    if(!success) {
+    if (!success) {
       toast({
         title: 'Error',
         description: message,
